@@ -7,7 +7,7 @@ import Image from 'next/image'
 export function Banner() {
   return (
     <section className="bg-[#E0C340]">
-      <div className="max-w-6xl mx-auto w-full items-center justify-between text-sm grid lg:grid-cols-2 ">
+      <div className="max-w-6xl mx-auto w-full items-center justify-between text-sm grid lg:grid-cols-2 p-8 gap-4">
         <div>
           <Image
             src={'/banner.png'}

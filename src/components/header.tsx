@@ -1,9 +1,9 @@
 export function Header() {
   return (
-    <header className="max-w-6xl mx-auto py-12 w-full items-center justify-between text-sm lg:flex">
+    <header className="max-w-6xl mx-auto px-8 py-12 w-full items-center justify-between text-sm lg:flex">
       <img src="/logo.png" alt="" />
 
-      <nav className="flex gap-12 items-center">
+      <nav className=" gap-12 items-center hidden lg:flex">
         <ul className="flex gap-16 font-medium">
           <li>CATALOGUE</li>
           <li>FASHION</li>

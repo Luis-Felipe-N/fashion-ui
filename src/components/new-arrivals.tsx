@@ -4,11 +4,21 @@ import Image from 'next/image'
 
 import { motion as m } from 'framer-motion'
 import { container } from '@/app/animations'
+import { ArrowRight } from '@phosphor-icons/react'
 
 export function NewArrivals() {
   return (
-    <section className="max-w-6xl mx-auto w-full items-center justify-between text-sm ">
-      <h2 className="uppercase text-4xl font-black">Novos Produtos</h2>
+    <section className="max-w-6xl mx-auto w-full items-center justify-between text-sm px-8">
+      <h2 className="uppercase inline-block lg:text-4xl text-2xl font-black relative z-20">
+        <span className="z-10 relative">Novos Produtos</span>{' '}
+        <Image
+          width={190}
+          height={32}
+          className="z-0 w-32 object-contain absolute bottom-0 end-0"
+          src="/elements/element-01.png"
+          alt=""
+        />
+      </h2>
 
       <m.ul
         variants={container}
@@ -44,7 +54,7 @@ export function NewArrivals() {
                 <strong className="text-xl">Hoodies & Sweetshirt</strong>
                 <p>Explore Now!</p>
               </div>
-              Arr
+              <ArrowRight size={24} />
             </div>
           </m.div>
         </li>
@@ -80,7 +90,7 @@ export function NewArrivals() {
                 <strong className="text-xl">Coats & Parkas</strong>
                 <p>Explore Now!</p>
               </div>
-              Arr
+              <ArrowRight size={24} />
             </div>
           </m.div>
         </m.li>
@@ -116,7 +126,7 @@ export function NewArrivals() {
                 <strong className="text-xl">Coats & Parkas</strong>
                 <p>Explore Now!</p>
               </div>
-              Arr
+              <ArrowRight size={24} />
             </div>
           </m.div>
         </m.li>
