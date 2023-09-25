@@ -6,11 +6,11 @@ import { motion as m } from 'framer-motion'
 import { container } from '@/app/animations'
 import { ArrowRight } from '@phosphor-icons/react'
 
-export function NewArrivals() {
+export function YoungsFavourite() {
   return (
-    <section className="max-w-6xl mx-auto w-full items-center justify-between text-sm px-8">
+    <section className="py-24 max-w-6xl mx-auto w-full items-center justify-between text-sm px-8">
       <h2 className="uppercase inline-block lg:text-4xl text-2xl font-black relative z-20">
-        <span className="z-10 relative">Novos Produtos</span>{' '}
+        <span className="z-10 relative">Para amolecentes</span>{' '}
         <Image
           width={190}
           height={32}
@@ -22,7 +22,7 @@ export function NewArrivals() {
 
       <m.ul
         variants={container}
-        className="py-24 flex flex-col lg:flex-row lg:justify-between justify-center items-center gap-16"
+        className="py-24 grid lg:grid-cols-2 lg:justify-between justify-center items-center gap-16"
       >
         <li className="overflow-hidden">
           <m.div
@@ -43,15 +43,15 @@ export function NewArrivals() {
             }}
           >
             <Image
-              src="/product-01.png"
-              height={700}
-              width={400}
+              src="/product-04.png"
+              height={575}
+              width={834}
               alt=""
               className="rounded-2xl object-contain"
             />
             <div className="flex items-center justify-between mt-4">
               <div className="text-lg">
-                <strong className="text-xl">Hoodies & Sweetshirt</strong>
+                <strong className="text-xl">Trending on instagram</strong>
                 <p>Explore Now!</p>
               </div>
               <ArrowRight size={24} className="text-slate-500" />
@@ -59,7 +59,7 @@ export function NewArrivals() {
           </m.div>
         </li>
 
-        <m.li>
+        <li>
           <m.div
             initial="hidden"
             whileInView="visible"
@@ -78,58 +78,22 @@ export function NewArrivals() {
             }}
           >
             <Image
-              src="/product-02.png"
-              height={700}
-              width={400}
+              src="/product-05.png"
+              height={575}
+              width={834}
               alt=""
               className="rounded-2xl object-contain"
             />
 
             <div className="flex items-center justify-between mt-4">
               <div className="text-lg">
-                <strong className="text-xl">Coats & Parkas</strong>
+                <strong className="text-xl">All Under $40</strong>
                 <p>Explore Now!</p>
               </div>
               <ArrowRight size={24} className="text-slate-500" />
             </div>
           </m.div>
-        </m.li>
-
-        <m.li>
-          <m.div
-            initial="hidden"
-            whileInView="visible"
-            variants={{
-              hidden: {
-                y: '10%',
-                opacity: 0,
-              },
-              visible: {
-                y: '0%',
-                opacity: 1,
-                transition: {
-                  duration: 0.5,
-                },
-              },
-            }}
-          >
-            <Image
-              src="/product-03.png"
-              height={700}
-              width={400}
-              alt=""
-              className="rounded-2xl object-contain"
-            />
-
-            <div className="flex items-center justify-between mt-4">
-              <div className="text-lg">
-                <strong className="text-xl">Coats & Parkas</strong>
-                <p>Explore Now!</p>
-              </div>
-              <ArrowRight size={24} className="text-slate-500" />
-            </div>
-          </m.div>
-        </m.li>
+        </li>
       </m.ul>
     </section>
   )

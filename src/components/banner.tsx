@@ -1,6 +1,6 @@
 'use client'
 
-import { container, item } from '@/app/animations'
+import { container, itemInView } from '@/app/animations'
 import { motion as m } from 'framer-motion'
 import Image from 'next/image'
 
@@ -17,16 +17,23 @@ export function Banner() {
             alt="Na imagem, uma deslumbrante jovem envolta em um casaco de pele sintética se destaca. Seu cabelo esvoaça suavemente no vento, enquanto ela se diverte em meio a um cenário encantador. Vestida com roupas cor-de-rosa adoráveis, ela irradia uma beleza cativante e uma energia contagiante, tornando a cena verdadeiramente fascinante."
           />
         </div>
-        <m.div variants={container} initial="hidden" animate="show">
+        <m.div
+          whileInView="visible"
+          variants={container}
+          initial="hidden"
+          animate="show"
+        >
           <div className="overflow-hidden text-6xl font-black uppercase">
-            <m.div variants={item} className="py-2">
+            <m.div whileInView="visible" variants={itemInView} className="py-2">
               <div className="-rotate-2 inline-block -ml-8 bg-white px-8 py-2">
                 <p className="rotate-3">PAYDAY</p>
               </div>
             </m.div>
           </div>
           <div className="overflow-hidden text-6xl font-black uppercase">
-            <m.p variants={item}>SALE NOW</m.p>
+            <m.p whileInView="visible" variants={itemInView}>
+              SALE NOW
+            </m.p>
           </div>
 
           <div className="text-lg mt-6">
