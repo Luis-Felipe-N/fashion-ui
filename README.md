@@ -15,4 +15,4 @@ Este repositório contém a implementação do site Fashion UI uma aplicação c
 - Certifique-se de ter o Node.js 18 e NPM 9.8.1 instalados em sua máquina.
 - Execute `npm install` na pasta raiz do projeto para criar instalar as dependências.
 - Por fim, execute `npm run dev` para subir a aplicação em modo de desenvolvimento.
-# fashion-ui
+
