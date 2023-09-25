@@ -3,7 +3,7 @@
 import Image from 'next/image'
 
 import { motion as m } from 'framer-motion'
-import { container, item, itemInView } from '@/app/animations'
+import { container } from '@/app/animations'
 
 export function NewArrivals() {
   return (
