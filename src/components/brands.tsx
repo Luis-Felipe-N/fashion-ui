@@ -1,7 +1,7 @@
 export function Brands() {
   return (
     <div className="bg-yellow-200 flex justify-center my-16 py-10">
-      <ul className="flex items-center justify-evenly w-full">
+      <ul className="flex items-center justify-evenly w-full imgs-banner ">
         <li>
           <img
             src={'/shopping/Rectangle 36.png'}

@@ -19,3 +19,8 @@ body {
     )
   rgb(var(--background-start-rgb));
 }
+
+.imgs-banner img {
+  /* filter: grayscale(100%); */
+  mix-blend-mode: darken;
+}
