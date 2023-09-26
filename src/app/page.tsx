@@ -1,5 +1,6 @@
 import { Banner } from '@/components/banner'
 import { Brands } from '@/components/brands'
+import { Community } from '@/components/community'
 import { Header } from '@/components/header'
 import { Hero } from '@/components/hero'
 import { NewArrivals } from '@/components/new-arrivals'
@@ -17,6 +18,7 @@ export default function Home() {
         <Banner />
         <YoungsFavourite />
         <Vouncher />
+        <Community />
       </main>
     </>
   )

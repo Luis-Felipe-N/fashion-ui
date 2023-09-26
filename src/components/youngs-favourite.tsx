@@ -10,7 +10,7 @@ export function YoungsFavourite() {
   return (
     <section className="py-24 max-w-6xl mx-auto w-full items-center justify-between text-sm px-8">
       <h2 className="uppercase inline-block lg:text-4xl text-2xl font-black relative z-20">
-        <span className="z-10 relative">Para amolecentes</span>{' '}
+        <span className="z-10 relative">Para adolescentes</span>{' '}
         <Image
           width={190}
           height={32}
@@ -51,7 +51,7 @@ export function YoungsFavourite() {
             />
             <div className="flex items-center justify-between mt-4">
               <div className="text-lg">
-                <strong className="text-xl">Trending on instagram</strong>
+                <strong className="text-xl">Trending no instagram</strong>
                 <p>Explore Now!</p>
               </div>
               <ArrowRight size={24} className="text-slate-500" />
@@ -87,7 +87,7 @@ export function YoungsFavourite() {
 
             <div className="flex items-center justify-between mt-4">
               <div className="text-lg">
-                <strong className="text-xl">All Under $40</strong>
+                <strong className="text-xl">Tudo por R$40</strong>
                 <p>Explore Now!</p>
               </div>
               <ArrowRight size={24} className="text-slate-500" />

@@ -39,12 +39,12 @@ export function Banner() {
           <div className="text-lg mt-6">
             <div className="space-y-4">
               <p>
-                Spend minimal $100 get 30% off voucher code for your next
-                purchase
+                Gaste no mínimo R$100 e receba um código de desconto de 30% para
+                a sua próxima compra.
               </p>
               <div>
-                <strong>1 June - 10 June 2021</strong>
-                <p>*Terms & Conditions apply</p>
+                <strong>1 de Julho - 10 de Julho 2024</strong>
+                <p>*Termo & Condições</p>
               </div>
               <button className="text-slate-50 text-base font-semibold bg-slate-950 p-4 px-10 rounded-lg">
                 Compre agora
