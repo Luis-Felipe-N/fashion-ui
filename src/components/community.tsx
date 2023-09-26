@@ -13,7 +13,7 @@ export function Community() {
           <input
             type="text"
             placeholder="Insira se email"
-            className="py-4 px-8 rounded-lg"
+            className="py-4 px-8 rounded-lg text-slate-800"
           />
           <button className="text-slate-50 text-base font-semibold bg-slate-950 p-4 px-10 rounded-lg">
             Enviar

@@ -14,16 +14,16 @@ export function Footer() {
         <p>Aprimore seu estilo com nossas linhas de roupas.</p>
         <nav>
           <ul className="flex gap-4">
-            <li className="h-10 w-10 flex items-center justify-center rounded-xl text-black bg-yellow-500">
+            <li className="h-10 w-10 flex items-center justify-center rounded-xl text-black bg-yellow-200">
               <FacebookLogo size={24} />
             </li>
-            <li className="h-10 w-10 flex items-center justify-center rounded-xl text-black bg-yellow-500">
+            <li className="h-10 w-10 flex items-center justify-center rounded-xl text-black bg-yellow-200">
               <InstagramLogo size={24} />
             </li>
-            <li className="h-10 w-10 flex items-center justify-center rounded-xl text-black bg-yellow-500">
+            <li className="h-10 w-10 flex items-center justify-center rounded-xl text-black bg-yellow-200">
               <TwitterLogo size={24} />
             </li>
-            <li className="h-10 w-10 flex items-center justify-center rounded-xl text-black bg-yellow-500">
+            <li className="h-10 w-10 flex items-center justify-center rounded-xl text-black bg-yellow-200">
               <LinkedinLogo size={24} />
             </li>
           </ul>
