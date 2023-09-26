@@ -24,20 +24,66 @@ export function Banner() {
           animate="show"
         >
           <div className="overflow-hidden text-6xl font-black uppercase">
-            <m.div whileInView="visible" variants={itemInView} className="py-2">
+            <m.div
+              initial="hidden"
+              whileInView="visible"
+              variants={{
+                hidden: {
+                  y: '100%',
+                },
+                visible: {
+                  y: '0%',
+                  transition: {
+                    duration: 0.5,
+                  },
+                },
+              }}
+              className="py-2"
+            >
               <div className="-rotate-2 inline-block -ml-8 bg-white px-8 py-2">
                 <p className="rotate-3">PAYDAY</p>
               </div>
             </m.div>
           </div>
           <div className="overflow-hidden text-6xl font-black uppercase">
-            <m.p whileInView="visible" variants={itemInView}>
+            <m.p
+              initial="hidden"
+              whileInView="visible"
+              variants={{
+                hidden: {
+                  y: '100%',
+                },
+                visible: {
+                  y: '0%',
+                  transition: {
+                    duration: 0.5,
+                  },
+                },
+              }}
+            >
               SALE NOW
             </m.p>
           </div>
 
           <div className="text-lg mt-6">
-            <div className="space-y-4">
+            <m.div
+              initial="hidden"
+              whileInView="visible"
+              variants={{
+                hidden: {
+                  y: '10%',
+                  opacity: 0,
+                },
+                visible: {
+                  y: '0%',
+                  opacity: 1,
+                  transition: {
+                    duration: 0.5,
+                  },
+                },
+              }}
+              className="space-y-4"
+            >
               <p>
                 Gaste no mínimo R$100 e receba um código de desconto de 30% para
                 a sua próxima compra.
@@ -49,7 +95,7 @@ export function Banner() {
               <button className="text-slate-50 text-base font-semibold bg-slate-950 p-4 px-10 rounded-lg">
                 Compre agora
               </button>
-            </div>
+            </m.div>
           </div>
         </m.div>
       </div>

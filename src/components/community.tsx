@@ -1,7 +1,7 @@
 export function Community() {
   return (
-    <section className="bg-yellow-500 flex justify-center py-24">
-      <div className="text-center w-1/2 space-y-8 text-white">
+    <section className="bg-yellow-500 flex justify-center py-24 mt-24">
+      <div className="text-center lg:w-1/2 p-8 space-y-8 text-white">
         <h1 className="uppercase text-5xl font-black">
           Se Junte a nossa comunidade para receber promoções mensais
         </h1>
@@ -9,7 +9,7 @@ export function Community() {
           Escreva seu email no campo abaixo para se manter descolado
         </p>
 
-        <div className="space-x-2">
+        <div className="flex flex-wrap gap-2 justify-center">
           <input
             type="text"
             placeholder="Insira se email"
